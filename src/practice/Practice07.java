@@ -39,6 +39,7 @@ class Point3D extends Point {
 
   public void moveUp() {
     this.z = z + 1;
+    //z++
   }
 
   public void moveDown() {

@@ -27,8 +27,6 @@ abstract class Converter {
 
 class Won2Dollar extends Converter {
 
-  protected double ratio;
-
   public Won2Dollar(double ratio) {
     this.ratio = ratio;
   }
@@ -47,8 +45,6 @@ class Won2Dollar extends Converter {
 }
 
 class Km2Mile extends Converter {
-
-  protected double ratio;
 
   protected Km2Mile(double ratio) {
     this.ratio = ratio;
@@ -70,10 +66,9 @@ class Km2Mile extends Converter {
 public class Practice0304 {
 
   public static void main(String[] args) {
-    // Won2Dollar toDollar = new Won2Dollar(1200);
-    // toDollar.run();
-
-    Km2Mile toMile = new Km2Mile(1.6);
-    toMile.run();
+    Won2Dollar toDollar = new Won2Dollar(1200);
+    toDollar.run();
+    // Km2Mile toMile = new Km2Mile(1.6);
+    // toMile.run();
   }
 }
